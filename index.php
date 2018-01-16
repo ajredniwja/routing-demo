@@ -37,6 +37,17 @@
     }
     );
 
+    //index.php/jewellery/toe-rings
+    $f3->route('GET /jewellery/toe-rings', function ()
+    {
+        //$view = new View;
+        //echo '<h1>Toe rings!</h1>';
+
+        $template = new Template();
+        echo $template->render('views/toe-rings.html');
+    }
+    );
+
 
 //Run fat free
     $f3->run();
